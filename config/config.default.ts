@@ -30,7 +30,7 @@ export default (appInfo: EggAppInfo) => {
 
   // MongoDB
   config.mongoose = {
-    url: 'mongodb://162.14.65.184:27017/benming-blog',
+    url: 'mongodb://kbmblog:Kbm11213@162.14.65.184:27017/benming-blog',
   };
   // the return config will combines to EggAppConfig
   return {
