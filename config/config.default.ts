@@ -16,9 +16,17 @@ export default (appInfo: EggAppInfo) => {
   };
 
   // 跨域
+  config.security = {
+    csrf: {
+      enable: false,
+      // ignoreJSON: true,
+    },
+    domainWhiteList: [ '*' ],
+  };
+
   config.cors = {
     origin: '*',
-    allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH',
+    allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS',
   };
 
   // 取消token
