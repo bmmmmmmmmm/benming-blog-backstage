@@ -10,7 +10,7 @@ export default class MyInfoService extends Service {
     return data;
   }
 
-  // 初始化数据
+  // 更新数据
   async refreshMyInfo(data) {
     const oldData = await this.app.model.MyInfo.find({});
     if (oldData) {

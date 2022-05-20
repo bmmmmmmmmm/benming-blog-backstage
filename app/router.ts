@@ -3,7 +3,11 @@ import { Application } from 'egg';
 export default (app: Application) => {
   const { controller, router } = app;
   router.get('/showNote', controller.note.showNote);
+  router.post('/getNote', controller.note.getNote);
   router.post('/addNote', controller.note.addNote);
+  router.post('/changeNote', controller.note.changeNote);
+  router.post('/addTags', controller.note.addTags);
+  router.post('/clearTags', controller.note.clearTags);
   router.get('/gainMyInfo', controller.myInfo.gainMyInfo);
   router.post('/refreshMyInfo', controller.myInfo.refreshMyInfo);
   // router.post('/changePortrait', controller.myInfo.changePortrait);

@@ -2,9 +2,9 @@ export default app => {
   const mongoose = app.mongoose;
   const Schema = mongoose.Schema;
   const noteSchema = new Schema({
-    id: {
-      type: String,
-    },
+    // id: {
+    //   type: String,
+    // },
     title: {
       type: String,
     },
@@ -12,7 +12,7 @@ export default app => {
       type: String,
     },
     tags: {
-      type: Number || String || Array,
+      type: Array,
     },
     content: {
       type: String,
